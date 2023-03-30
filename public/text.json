@@ -1,0 +1,40 @@
+{
+    "blogs": [
+        {
+            "id": "1",
+            "author_name": "Shah Rukh",
+            "published_in": "11/1/2020",
+            "blog_cover_image": "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=740&t=st=1680192965~exp=1680193565~hmac=42b50ebc9d49101a88e4f2173183b0f39f583ad52bc2da1d8d5494069f848b5f",
+            "author_img": "https://img.freepik.com/free-photo/portrait-modern-man_23-2147960990.jpg?w=740&t=st=1680192774~exp=1680193374~hmac=9eb3115d46d82f3edc2fc7a904474e37052dce0bf084c432976b87779e95b444",
+            "blog_title": "How to get your first job as a self-taught programmer",
+            "read_time":"05 min read"
+        },
+        {
+            "id": "2",
+            "author_name": "Tom Solaiman",
+            "published_in": "11/6/2019",
+            "blog_cover_image": "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=740&t=st=1680192965~exp=1680193565~hmac=42b50ebc9d49101a88e4f2173183b0f39f583ad52bc2da1d8d5494069f848b5f",
+            "author_img": "https://img.freepik.com/free-photo/portrait-modern-man_23-2147960990.jpg?w=740&t=st=1680192774~exp=1680193374~hmac=9eb3115d46d82f3edc2fc7a904474e37052dce0bf084c432976b87779e95b444",
+            "blog_title": "Future of programmer",
+            "read_time":"15 min read"
+        },
+        {
+            "id": "3",
+            "author_name": "Rokib brother",
+            "published_in": "10/4/2012",
+            "blog_cover_image": "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=740&t=st=1680192965~exp=1680193565~hmac=42b50ebc9d49101a88e4f2173183b0f39f583ad52bc2da1d8d5494069f848b5f",
+            "author_img": "https://img.freepik.com/free-photo/portrait-modern-man_23-2147960990.jpg?w=740&t=st=1680192774~exp=1680193374~hmac=9eb3115d46d82f3edc2fc7a904474e37052dce0bf084c432976b87779e95b444",
+            "blog_title": "How to get your first job as a self-taught programmer",
+            "read_time": "10 min read"
+        },
+        {
+            "id": "4",
+            "author_name": "Tom Cruise",
+            "published_in": "8/4/2023",
+            "blog_cover_image": "https://img.freepik.com/free-photo/professional-programmer-working-late-dark-office_1098-18705.jpg?w=740&t=st=1680192965~exp=1680193565~hmac=42b50ebc9d49101a88e4f2173183b0f39f583ad52bc2da1d8d5494069f848b5f",
+            "author_img": "https://img.freepik.com/free-photo/portrait-modern-man_23-2147960990.jpg?w=740&t=st=1680192774~exp=1680193374~hmac=9eb3115d46d82f3edc2fc7a904474e37052dce0bf084c432976b87779e95b444",
+            "blog_title": "How to get your first job as a self-taught programmer",
+            "read_time": "12 min read"
+        }
+    ]
+}
