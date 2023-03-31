@@ -4,10 +4,14 @@ import Bookmarks from '../Bookmarks/Bookmarks';
 import Library from '../Library/Library';
 import SideBar from '../SideBar/SideBar';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Librarys = () => {
     const [books, setBooks] = useState([]);
     const [cardTime, setTime] = useState([]);
     const [bookmark, setBookmark] = useState([]);
+    console.log(bookmark);
     useEffect(() => {
         fetch('library.json')
             .then(res => res.json())
@@ -30,9 +34,9 @@ const Librarys = () => {
     //     }
     // }
     const bookMarkHandler = (mark) => {
-        const markedItems =bookmark.find(bk => bk.id === mark.id);
+        const markedItems = bookmark.find(bk => bk.id === mark.id);
         if (markedItems) {
-            alert('Hello')
+            toast('Already exits')
         }
         else {
 
@@ -45,6 +49,7 @@ const Librarys = () => {
         <div className='d-flex container-main mt-5'>
             <div className="grid col-md-8">
                 <div id="container" className="">
+                    <ToastContainer></ToastContainer>
                     {
                         books.map(book => <Library bookMarkHandler={bookMarkHandler} timeHandler={timeHandler} key={book.id} book={book}></Library>)
                     }
@@ -56,7 +61,7 @@ const Librarys = () => {
                 </div>
 
                 <div id='bookmarks-box' className=" border border-1 border-warning mt-3">
-                    <Bookmarks bookmark={bookmark}></Bookmarks>
+                    <Bookmarks  bookmark={bookmark}></Bookmarks>
                 </div>
             </div>
 
