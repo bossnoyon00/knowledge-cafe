@@ -9,7 +9,7 @@ const Librarys = () => {
     const [cardTime, setTime] = useState([]);
     const [bookmark, setBookmark] = useState([]);
     useEffect(() => {
-        fetch('text.json')
+        fetch('library.json')
             .then(res => res.json())
             .then(data => setBooks(data.blogs))
     }, [])
@@ -18,18 +18,35 @@ const Librarys = () => {
         const newTime = [...cardTime, time]
         setTime(newTime);
     }
-    const bookMark = (mark) => {
-        const newBookmark = [...bookmark, mark]
-        setBookmark(newBookmark);
-    }
+    // const bookMark = (mark) => {
+    //     const exist = bookMark.map(bm => bm.id === mark.id);
+    //     if (exist) {
+    //         alert('Heyyy donnnnttt touch')
+    //     }
+    //     else {
 
+    //         const newBookmark = [...bookmark, mark]
+    //         setBookmark(newBookmark);
+    //     }
+    // }
+    const bookMarkHandler = (mark) => {
+        const markedItems =bookmark.find(bk => bk.id === mark.id);
+        if (markedItems) {
+            alert('Hello')
+        }
+        else {
+
+            const newBookMark = [...bookmark, mark];
+            setBookmark(newBookMark);
+        }
+    }
 
     return (
         <div className='d-flex container-main mt-5'>
             <div className="grid col-md-8">
                 <div id="container" className="">
                     {
-                        books.map(book => <Library bookMark={bookMark} timeHandler={timeHandler} key={book.id} book={book}></Library>)
+                        books.map(book => <Library bookMarkHandler={bookMarkHandler} timeHandler={timeHandler} key={book.id} book={book}></Library>)
                     }
                 </div>
             </div>

@@ -5,10 +5,12 @@ import { FaBookmark } from 'react-icons/fa';
 
 
 const Library = (props) => {
+
     const { author_img, author_name, blog_cover_image
         , published_in, blog_title, read_time } = props.book;
     const timeHandler = props.timeHandler;
-    const bookMark = props.bookMark;
+    // const bookMark = props.bookMark;
+    const bookMarkHandler = props.bookMarkHandler;
     return (
         <div className=''>
             <div className="card w-full h-full mb-5">
@@ -25,7 +27,7 @@ const Library = (props) => {
 
                         <div className='d-flex'>
                             <p>{read_time} min read</p>
-                            <FaBookmark className='ms-2 d-flex align-items-center ' onClick={() => bookMark(props.book)} />
+                            <FaBookmark className='ms-2 d-flex align-items-center ' onClick={() => bookMarkHandler(props.book)} />
                         </div>
 
                     </div>
