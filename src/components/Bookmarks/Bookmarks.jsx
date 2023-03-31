@@ -12,7 +12,13 @@ const Bookmarks = (props) => {
     return (
         <div>
 
-          
+            <h2>Bookmark : {bookMark.length}</h2>
+            {
+                bookMark.map(bk => <Bookmark key={bk.id} bk={bk}></Bookmark>)
+
+            }
+
+
 
         </div>
     );
