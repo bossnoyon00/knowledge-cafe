@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Librarys.css'
 import Bookmarks from '../Bookmarks/Bookmarks';
 import Library from '../Library/Library';
 import SideBar from '../SideBar/SideBar';
@@ -24,15 +25,15 @@ const Librarys = () => {
 
 
     return (
-        <div className='d-flex mt-5'>
-            <div className="grid col-8">
-                <div id="container" className="row row-cols-1 g-4">
+        <div className='d-flex container-main mt-5'>
+            <div className="grid col-md-8">
+                <div id="container" className="">
                     {
                         books.map(book => <Library bookMark={bookMark} timeHandler={timeHandler} key={book.id} book={book}></Library>)
                     }
                 </div>
             </div>
-            <div className="col-4 sticky">
+            <div className="grid  col-md-4 sticky">
                 <div id='time-box' className="border border-1 border-warning">
                     <SideBar cardTime={cardTime}></SideBar>
                 </div>
