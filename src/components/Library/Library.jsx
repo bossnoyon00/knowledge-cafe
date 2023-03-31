@@ -16,7 +16,7 @@ const Library = (props) => {
                 <div className="card-body">
                     <div className='d-flex justify-content-around align-items-center'>
                         <div className='d-flex gy-2'>
-                            <img className='author-img' src={author_img} alt="" />
+                            <img className='author-img me-3' src={author_img} alt="" />
                             <div>
                                 <h5 className="card-title text-center">{author_name}</h5>
                                 <h5 className="card-title text-center">{published_in}</h5>

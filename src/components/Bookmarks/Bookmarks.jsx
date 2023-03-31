@@ -1,4 +1,5 @@
 import React from 'react';
+import Bookmark from '../Bookmark/Bookmark';
 
 const Bookmarks = (props) => {
     const book = props.bookmark;
@@ -14,14 +15,7 @@ const Bookmarks = (props) => {
 
             <h2>Bookmark : {bookMark.length}</h2>
             {
-                bookMark.map(bk => {
-                    return (<div className="card w-75 mt-2 mx-auto rounded-4">
-                        <div class="card-body">
-                            <h3>{bk}</h3>
-                        </div>
-                    </div>)
-
-                })
+                bookMark.map(bk => <Bookmark key={bk.id} bk={bk}></Bookmark>)
 
             }
 
