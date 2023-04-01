@@ -11,7 +11,6 @@ const Librarys = () => {
     const [books, setBooks] = useState([]);
     const [cardTime, setTime] = useState([]);
     const [bookmark, setBookmark] = useState([]);
-    console.log(bookmark);
     useEffect(() => {
         fetch('library.json')
             .then(res => res.json())
@@ -55,13 +54,13 @@ const Librarys = () => {
                     }
                 </div>
             </div>
-            <div className="grid  col-md-4 sticky">
+            <div className="grid  col-md-4 sticky-top">
                 <div id='time-box' className="border border-1 border-warning">
                     <SideBar cardTime={cardTime}></SideBar>
                 </div>
 
-                <div id='bookmarks-box' className=" border border-1 border-warning mt-3">
-                    <Bookmarks  bookmark={bookmark}></Bookmarks>
+                <div id='bookmarks-box' className=" border border-1 sticky-top border-warning mt-3">
+                    <Bookmarks bookmark={bookmark}></Bookmarks>
                 </div>
             </div>
 
