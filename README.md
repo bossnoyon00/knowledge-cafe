@@ -1,3 +1,3 @@
 # knowledge-cafe
 
-- Netlify live link : https://mr-eye-ai-universe.netlify.app/
+-  Live website Link : https://mr-eye-knowledge-cafe.netlify.app/
